@@ -1,0 +1,54 @@
+{
+  "name": "neural-ai-whatsapp-bot",
+  "version": "2.1.0",
+  "description": "Enhanced Neural AI WhatsApp Bot with Bilingual Support, Fixed Image Generation, and Offline Handling",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js",
+    "setup": "npm install && node setup.js",
+    "clean": "rm -rf wwebjs_auth temp node_modules && npm install"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "ai",
+    "neural",
+    "gemini",
+    "assistant",
+    "image-generation",
+    "pdf-reader",
+    "memory",
+    "sinhala",
+    "bilingual",
+    "offline-support"
+  ],
+  "author": "Neural AI Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.23.0",
+    "pdf-parse": "^1.1.1",
+    "fs-extra": "^11.1.1",
+    "sharp": "^0.33.0",
+    "jimp": "^0.22.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "your-repo-url"
+  },
+  "bugs": {
+    "url": "your-repo-url/issues"
+  },
+  "homepage": "your-repo-url#readme"
+}
