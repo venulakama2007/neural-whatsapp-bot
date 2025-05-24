@@ -5,6 +5,7 @@
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js",
+    "build": "npm install",
     "dev": "nodemon bot.js",
     "setup": "npm install && node setup.js",
     "clean": "rm -rf wwebjs_auth temp node_modules && npm install"
