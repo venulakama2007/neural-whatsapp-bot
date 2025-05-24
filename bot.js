@@ -1,5 +1,24 @@
 require('dotenv').config();
 
+require('dotenv').config();
+
+// Add this for Render deployment
+const PORT = process.env.PORT || 3000;
+const express = require('express');
+const app = express();
+
+// Health check endpoint for Render
+app.get('/', (req, res) => {
+    res.json({
+        status: 'Neural AI WhatsApp Bot is running!',
+        timestamp: new Date().toISOString(),
+        botStatus: botStatus.isOnline ? 'Online' : 'Offline'
+    });
+});
+
+app.listen(PORT, () => {
+    console.log(`🌐 Health check server running on port ${PORT}`);
+});
 
 const { Client, LocalAuth, MessageMedia } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
